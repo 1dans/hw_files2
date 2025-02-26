@@ -1,5 +1,6 @@
 #include "main.h"
 #include "task1.h"
+#include "task2.h"
 #include <iostream>
 using namespace std;
 #include <fstream>
@@ -19,7 +20,7 @@ int main()
 		cin >> choice;
 		switch (choice) {
 		case '1': task1(); break;
-		case '2': /*task2();*/ break;
+		case '2': task2(); break;
 		case '3': /*task3();*/ break;
 		case 'q': break;
 		default: cout << "Такого варіанту немає. Введіть 1, 2, 3 або q\n"; break;
