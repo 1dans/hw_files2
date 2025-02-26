@@ -58,4 +58,5 @@ void task2()
 	filtred.close();
 	cout << "Слова успішно відфільтровані\n";
 	showWelcome();
+	return;
 }
