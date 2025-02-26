@@ -26,7 +26,7 @@ void task1()
 	cout << "Чи хотіли би ви додати інформацію про студентів? т/н\nВаш вибір: ";
 	cin >> choice;
 	if (choice == 'т' || choice=='Т') {
-		cout << "Введіть дані про студента\n (Залиште поле \"прізвище\" пороіжнім, якщо хочете закінчити ввід)";
+		cout << "Введіть дані про студента\n(Залиште поле \"прізвище\" пороіжнім, якщо хочете закінчити ввід)\n";
 		while (true) {
 			cin.ignore();
 			cout << "Прізвище: ";
@@ -38,9 +38,10 @@ void task1()
 			cin >> examMark;
 			Student student = { surname, name, examMark };
 			s.push_back(student);
+			out << surname << " " << name << " " << examMark << endl;
 		}
 	}
-	out << "кінець групи 0";
+	out << "кінець групи 0" << endl;
 	out.close();
 	cout << "Дані про студентів були успішно записані у файл \"students.txt\"\n";
 	cout << "Введіть мінімальний бал для виведення студентів: ";
@@ -76,4 +77,6 @@ void task1()
 			cout << "Група " << i + 1 << ": " << groupAverage[i] << endl;
 		}
 	}
+	showWelcome();
+	return;
 }
